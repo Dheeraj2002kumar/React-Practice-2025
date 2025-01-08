@@ -9,6 +9,10 @@ createRoot(document.getElementById('root')).render(
   </StrictMode>,
 )
 
+
+
+
+
 // ----------- other method -------------
 // const rootElement = document.getElementById("root");
 // const root = createRoot(rootElement);
@@ -23,6 +27,12 @@ createRoot(document.getElementById('root')).render(
 // we can write like this
 
 // root.render(<Hello />);
+
+
+
+
+
+
 // +++++++++++ W3 ++++++++++++++++++++++++
 /*
 import React from "react";
