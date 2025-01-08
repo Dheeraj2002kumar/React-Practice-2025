@@ -12,6 +12,44 @@ import './App.css'
 // export default App
 
 
+// ------------- CSS Styling -------------------
+import Header from './css_styling/Inline_styling/inline';
+import HeaderStylesheetEx from './css_styling/css_stylesheet/stylesheet_header';
+
+function App(){
+  return (
+    <>
+      <Header />
+      <HeaderStylesheetEx />
+    </>
+  );
+}
+
+
+
+export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ---------------- Todos -----------------------------
 // Using memo will cause React to skip rendering a component if its props have not changed.
 
@@ -23,6 +61,7 @@ import './App.css'
 // In this example, the Todos component re-renders even when the todos have not changed.
 
 
+/*
 import { useState } from "react";
 import ReactDOM from "react-dom";
 import Todos from './Todos/Todos';
@@ -47,7 +86,7 @@ const App = () => {
   );
 };
 export default App;
-
+*/
 
 
 
