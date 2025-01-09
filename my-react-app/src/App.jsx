@@ -15,12 +15,14 @@ import './App.css'
 // ------------- CSS Styling -------------------
 import Header from './css_styling/Inline_styling/inline';
 import HeaderStylesheetEx from './css_styling/css_stylesheet/stylesheet_header';
+import Car from './css_styling/css_modules/Car';
 
 function App(){
   return (
     <>
       <Header />
       <HeaderStylesheetEx />
+      <Car />
     </>
   );
 }
