@@ -27,3 +27,25 @@ function FavoriteColor(){
 }
 
 export default FavoriteColor;
+
+
+/*
+
+You must import Hooks from react.
+
+Here we are using the useState Hook to keep track of the application state.
+
+State generally refers to application data or properties that need to be tracked.
+
+Hook Rules
+There are 3 rules for hooks:
+
+Hooks can only be called inside React function components.
+Hooks can only be called at the top level of a component.
+Hooks cannot be conditional
+Note: Hooks will not work in React class components.
+
+Custom Hooks
+If you have stateful logic that needs to be reused in several components, you can build your own custom Hooks.
+
+*/
