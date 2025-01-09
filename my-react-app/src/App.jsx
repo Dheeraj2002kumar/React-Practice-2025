@@ -12,6 +12,23 @@ import './App.css'
 // export default App
 
 
+// -------------- React-Hooks ----------------------
+import FavoriteColor from './React-Hook/hook';
+
+export default function App(){
+  return (
+    <>
+      <FavoriteColor />
+    </>
+  );
+}
+
+
+
+
+
+
+/*
 // ------------- CSS Styling -------------------
 import Header from './css_styling/Inline_styling/inline';
 import HeaderStylesheetEx from './css_styling/css_stylesheet/stylesheet_header';
@@ -27,10 +44,8 @@ function App(){
   );
 }
 
-
-
 export default App;
-
+*/
 
 
 
