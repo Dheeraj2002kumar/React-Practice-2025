@@ -80,19 +80,52 @@ Only run the effect on the initial render:
 
 */
 
+// import { useState, useEffect } from "react";
+// import ReactDOM from "react-dom/client";
+
+// function Timer() {
+//   const [count, setCount] = useState(0);
+
+//   useEffect(() => {
+//     setTimeout(() => {
+//       setCount(count + 1);
+//     }, 1000);
+//   }, []); // <- add empty brackets here
+
+//   return <h1>I've rendered {count} times!</h1>;
+// }
+
+// export default Timer;
+
+
+
+/*
+
+Example:
+Here is an example of a useEffect Hook that is dependent on a variable. If the count variable updates, the effect will run again:
+
+*/ 
+
 import { useState, useEffect } from "react";
-import ReactDOM from "react-dom/client";
 
-function Timer() {
-  const [count, setCount] = useState(0);
+function Counter(){
+    const [count, setCount] = useState(0);
+    const [calculation, setCalculation] = useState(0);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setCount(count + 1);
-    }, 1000);
-  }, []); // <- add empty brackets here
+    useEffect(() => {
+        setCalculation(() => count * 2);
+    }, [count]);   // <- add the count variable here
 
-  return <h1>I've rendered {count} times!</h1>;
+    return (
+      <>
+        <p>Counter: {count}</p>
+        <button onClick={() => setCount((c) => c + 1)}>+</button>
+        <p>Calculation: {calculation}</p>
+      </>
+    );
 }
 
-export default Timer;
+export { Counter };
+
+
+// If there are multiple dependencies, they should be included in the useEffect dependency array.
