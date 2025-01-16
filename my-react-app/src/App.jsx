@@ -12,19 +12,41 @@ import './App.css'
 // export default App
 
 
-// ------------------- useState-Hook ------------------------
-// import FavoriteColor from './React-Hook/useState-Hook';
-import Car from './React-Hook/useState-Hook';
+// ----------------- React useEffect Hooks -------------
+// useEffect is a hook that allows you to run some code after rendering a component 
+import Timer from './React-Hook/useEffect-Hook';
 
-
-export default function App() {
+export default function App(){
   return (
     <>
-      {/* <FavoriteColor /> */}
-      <Car />
+      <Timer />
     </>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+// ------------------- useState-Hook ------------------------
+// import FavoriteColor from './React-Hook/useState-Hook';
+// import Car from './React-Hook/useState-Hook';
+
+
+// export default function App() {
+//   return (
+//     <>
+//       {/* <FavoriteColor /> */}
+//       <Car />
+//     </>
+//   );
+// }
 
 
 
