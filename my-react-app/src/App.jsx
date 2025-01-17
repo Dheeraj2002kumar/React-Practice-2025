@@ -12,17 +12,33 @@ import './App.css'
 // export default App
 
 
-// -------------- React useRef Hook -----------------------
 
-import { App1 } from './React-Hook/useRef-Hook';
+
+// ---------- React useReducer Hook -------------------
+
+import Todos from './React-Hook/useReducer-Hook';
 
 export default function App(){
   return (
     <>
-      <App1 />
+      <Todos />
     </>
   );
 }
+
+
+
+// -------------- React useRef Hook -----------------------
+
+// import { App1 } from './React-Hook/useRef-Hook';
+
+// export default function App(){
+//   return (
+//     <>
+//       <App1 />
+//     </>
+//   );
+// }
 
 
 // ----------------- React useContext Hook -----------------
