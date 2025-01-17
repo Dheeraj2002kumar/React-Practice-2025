@@ -12,16 +12,14 @@ import './App.css'
 // export default App
 
 
-// ----------------- React useEffect Hooks -------------
-// useEffect is a hook that allows you to run some code after rendering a component 
-import Timer from './React-Hook/useEffect-Hook';
-// import { Counter } from './React-Hook/useEffect-Hook';
+// ----------------- React useContext Hook -----------------
+
+import { Component1 } from './React-Hook/useContext-Hook';
 
 export default function App(){
   return (
     <>
-      <Timer />
-      {/* <Counter /> */}
+      <Component1 />
     </>
   );
 }
@@ -29,9 +27,20 @@ export default function App(){
 
 
 
+// ----------------- React useEffect Hooks -------------
+// useEffect is a hook that allows you to run some code after rendering a component 
 
+// import Timer from './React-Hook/useEffect-Hook';
+// // import { Counter } from './React-Hook/useEffect-Hook';
 
-
+// export default function App(){
+//   return (
+//     <>
+//       <Timer />
+//       {/* <Counter /> */}
+//     </>
+//   );
+// }
 
 
 
