@@ -12,17 +12,36 @@ import './App.css'
 // export default App
 
 
-// ------------------- React useCallback Hook --------------------
 
-import UseCallBack from './React-Hook/React-useCallback-Hook/useCallback-Hook';
+// ---------------------- React useMemo-Hook --------------
+import UseMemoFunction from './React-Hook/useMemo-Hook';
 
 export default function App(){
   return (
     <>
-      <UseCallBack />
+      <UseMemoFunction />
     </>
   );
 }
+
+
+
+
+
+
+
+
+// ------------------- React useCallback Hook --------------------
+
+// import UseCallBack from './React-Hook/React-useCallback-Hook/useCallback-Hook';
+
+// export default function App(){
+//   return (
+//     <>
+//       <UseCallBack />
+//     </>
+//   );
+// }
 
 
 
