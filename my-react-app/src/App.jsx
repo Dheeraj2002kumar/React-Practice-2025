@@ -13,16 +13,29 @@ import './App.css'
 
 
 
-// ---------------------- React useMemo-Hook --------------
-import UseMemoFunction from './React-Hook/useMemo-Hook';
+// ------------------ React Custom Hooks -------------------------
+
+import Home from './React-Hook/Custom-Hooks';
 
 export default function App(){
   return (
     <>
-      <UseMemoFunction />
+    <Home />
     </>
   );
 }
+
+
+// ---------------------- React useMemo-Hook --------------
+// import UseMemoFunction from './React-Hook/useMemo-Hook';
+
+// export default function App(){
+//   return (
+//     <>
+//       <UseMemoFunction />
+//     </>
+//   );
+// }
 
 
 
