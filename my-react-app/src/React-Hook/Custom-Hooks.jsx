@@ -45,3 +45,34 @@ const Home = () => {
 export default Home;
 
 
+
+/*
+
+The fetch logic may be needed in other components as well, so we will extract that into a custom Hook.
+
+Move the fetch logic to a new file to be used as a custom Hook:
+
+*/
+
+
+
+
+// import ReactDOM from "react-dom/client";
+import useFetch from "./useFetch";
+
+const Home = () => {
+    const [data] = useFetch("https://jsonplaceholder.typicode.com/todos");
+
+    return (
+        <>
+            {data &&
+                data.map((item) => {
+                    return <p key={item.id}>{item.title}</p>;
+                })
+            }
+        </>
+    );
+};
+
+export default Home;
+
